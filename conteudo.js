@@ -18,7 +18,25 @@ Hoje, gosto de pensar que nossa história começou assim: com livros emprestados
 
 Se eu pudesse voltar àquele 12 de junho, mesmo com todo o nervosismo, convidaria você para aquele date outra vez. ♡`, foto: "" },
 ", foto: "" },
-    { data: "Um dia inesquecível", titulo: "Uma lembrança favorita", historia: "Coloque aqui o que vocês viveram e o que você sentiu.", foto: "" },
+    { data: "Um dia inesquecível", titulo: 
+{ data: "15 de junho", titulo: "Um mini fogo querendo virar incêndio ♡", historia: `No dia anterior, o céu estava tão lindo que tirei uma foto. Eu ainda não sabia que, junto com aquela lembrança, estava começando a guardar algo muito maior dentro de mim.
+
+No dia 15, escrevi nas minhas notas:
+
+"Estou um pouco confusa com todos os sentimentos que têm surgido dentro de mim.
+
+Tenho um mini fogo aceso, querendo dar início a um incêndio. É uma sensação que eu já conheço, mas não sei se quero permitir, até porque, se vier só de mim, não sei bem como reagir.
+
+É complicado.
+
+Parece uma fanfic mal escrita em que tudo começou por acaso. Será que é carência de atenção ou o sentimento é real?"
+
+Relendo isso hoje, acho bonito pensar que, antes mesmo de saber o que nós seríamos, eu já estava tentando entender o que você estava se tornando para mim.
+
+Eu ainda tinha dúvidas, medo de sentir sozinha e receio de deixar aquele fogo crescer. Mas alguma coisa em mim já tinha começado a mudar.
+
+E olha só onde aquele pequeno incêndio nos trouxe. ♡`, foto: "" },
+, historia: "Coloque aqui o que vocês viveram e o que você sentiu.", foto: "" },
     { data: "E ainda vem muito mais...", titulo: "Nossos próximos capítulos", historia: "Mal posso esperar por todas as memórias que ainda vamos criar juntas.", foto: "" }
   ],
   musicas: [
