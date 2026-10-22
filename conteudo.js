@@ -1,7 +1,7 @@
 // EDITE APENAS OS TEXTOS ENTRE ASPAS. Para fotos, envie arquivos para a pasta fotos
 // e escreva o caminho como "fotos/nome-da-foto.jpg".
 const conteudo = {
-  boasVindas: "Sthella, fiz este pedacinho da internet para guardar tudo aquilo que faz a nossa história ser tão especial. Bem-vinda ao nosso cantinho. ♡",
+  boasVindas: "Sthella, tudo começou por acaso, com nossos gostos em comum para fantasias e leituras. Nada me deixa mais feliz do que poder escrever um pouco da nossa história e guardar aqui os pedacinhos de nós duas. ♡♡",
   memorias: [
     { data: "Nosso começo", titulo: "Onde tudo começou", historia: "Escreva aqui a história desse momento tão especial...", foto: "" },
     { data: "Um dia inesquecível", titulo: "Uma lembrança favorita", historia: "Coloque aqui o que vocês viveram e o que você sentiu.", foto: "" },
