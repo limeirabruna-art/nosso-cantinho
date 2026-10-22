@@ -1,0 +1,1 @@
+Envie suas fotos para esta pasta. Depois indique o nome no arquivo conteudo.js.

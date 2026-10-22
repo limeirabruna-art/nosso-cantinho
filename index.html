@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nosso Cantinho ♡</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+:root{--mint:#e4f4e9;--sage:#a9cfb5;--dark:#345d48;--cream:#fffdf6;--pink:#f7dce3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--dark);font-family:'DM Sans',sans-serif;line-height:1.6}
+body:before{content:"✿  ♡  ✧  ✿  ♡  ✧";position:absolute;top:100px;right:4%;color:#92bca1;letter-spacing:18px;opacity:.5}
+nav{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;background:#e4f4e9;gap:12px;flex-wrap:wrap}nav a{color:var(--dark);text-decoration:none;margin-left:14px;font-size:.9rem}nav a:hover{text-decoration:underline}.logo{font-family:Georgia,serif;font-size:1.3rem}
+.hero{text-align:center;padding:100px 20px 110px;background:radial-gradient(circle at 15% 30%,#f9e4e8,transparent 30%),radial-gradient(circle at 80% 70%,#c9e8d1,transparent 40%),var(--mint);border-radius:0 0 45% 45% / 0 0 8% 8%}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.72rem;font-weight:bold}.hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:clamp(3.5rem,10vw,7rem);line-height:1.1;margin:16px 0}.hero h1 em{color:#729e80}.hero p{max-width:530px;margin:20px auto 30px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--dark);color:white;padding:13px 27px;border-radius:100px;text-decoration:none;transition:transform .2s}.btn:hover{transform:translateY(-3px)}
+section{max-width:1080px;margin:auto;padding:85px 22px}h2{font:500 clamp(2rem,5vw,3.2rem) 'Playfair Display',Georgia,serif;text-align:center;margin:8px 0 14px}.intro{text-align:center;max-width:590px;margin:0 auto 42px}.flower{text-align:center;color:#89b899;font-size:1.8rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:white;border:1px solid #dce9dc;border-radius:20px;overflow:hidden;box-shadow:0 10px 25px #345d480d}.card img{display:block;width:100%;height:240px;object-fit:cover}.card-body{padding:22px}.card h3{font:500 1.5rem 'Playfair Display',Georgia,serif;margin:0 0 8px}.date{font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:#6c9778}.placeholder{height:240px;display:grid;place-items:center;background:linear-gradient(135deg,#dcefe0,#f9e7ea);font-size:4rem}
+.soft{max-width:none;background:var(--mint)}.soft .inner{max-width:1080px;margin:auto}.music a{color:var(--dark);font-weight:bold}.letter{background:white;max-width:690px;margin:auto;padding:clamp(24px,6vw,60px);border-radius:8px;box-shadow:0 12px 40px #345d4810;transform:rotate(-1deg);border:1px solid #e7e8dc}.letter p{white-space:pre-line}.signature{text-align:right;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:1.5rem}
+footer{text-align:center;padding:40px 20px;background:#d7eadd}footer small{display:block;margin-top:8px}a:focus-visible{outline:3px solid #345d48;outline-offset:3px}
+@media(max-width:600px){nav{justify-content:center;text-align:center}nav .logo{width:100%}nav a{margin:0 6px}.hero{padding:80px 18px}section{padding:60px 20px}}
+</style></head><body>
+<nav><div class="logo">✿ nosso cantinho ♡</div><div><a href="#memorias">Memórias</a><a href="#musicas">Músicas</a><a href="#cartinha">Cartinha</a></div></nav>
+<header class="hero"><div class="eyebrow">um lugarzinho só nosso ✧</div><h1>Nosso <em>Cantinho</em> ♡</h1><p id="welcome"></p><a class="btn" href="#memorias">Entre, meu amor ↗</a><div style="margin-top:35px;font-size:2rem">✿ ♡ ✿</div></header>
+<section id="memorias"><div class="flower">❀</div><h2>Pequenos momentos, grandes amores</h2><p class="intro">Uma coleção de dias que eu guardaria para sempre, se pudesse colocar o tempo em um potinho.</p><div id="memoryGrid" class="grid"></div></section>
+<div class="soft"><section class="inner" id="musicas"><div class="flower">♫</div><h2>Se o nosso amor fosse uma playlist...</h2><p class="intro">Cada música aqui tem um pedacinho de você.</p><div id="musicGrid" class="grid music"></div></section></div>
+<section id="cartinha"><div class="flower">♡</div><h2>Uma cartinha para você</h2><p class="intro">Para ler sempre que quiser lembrar do quanto é amada.</p><div class="letter"><p id="letter"></p><div class="signature" id="signature"></div></div></section>
+<footer>Feito com amor, em cada detalhe. ♡<small>Nosso Cantinho · um presente que continua crescendo ✿</small></footer>
+<script src="conteudo.js"></script><script>
+document.getElementById('welcome').textContent=conteudo.boasVindas;
+document.getElementById('letter').textContent=conteudo.cartinha;
+document.getElementById('signature').textContent=conteudo.assinatura;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+document.getElementById('memoryGrid').innerHTML=conteudo.memorias.map(m=>`<article class="card">${m.foto?`<img src="${esc(m.foto)}" alt="${esc(m.titulo)}" loading="lazy">`:'<div class="placeholder" aria-hidden="true">♡</div>'}<div class="card-body"><div class="date">${esc(m.data)}</div><h3>${esc(m.titulo)}</h3><p>${esc(m.historia)}</p></div></article>`).join('');
+document.getElementById('musicGrid').innerHTML=conteudo.musicas.map(m=>`<article class="card"><div class="card-body"><div class="date">♫ nossa trilha sonora</div><h3>${esc(m.titulo)}</h3><p>${esc(m.mensagem)}</p>${m.link?`<a href="${esc(m.link)}" target="_blank" rel="noopener noreferrer">Ouvir música ↗</a>`:''}</div></article>`).join('');
+</script></body></html>
